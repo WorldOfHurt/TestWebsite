@@ -1,0 +1,97 @@
+/*Carlton Johnson 4/23/2015*/
+<style>
+
+/* supposedly determines properties of the body of the pages */
+html, body{
+	margin:0px;
+	padding:0px;
+}
+
+/* unvisited link */
+a:link {
+    color: #CC0000;
+}
+
+/* visited link */
+a:visited {
+    color: #CC0000;
+}
+
+/* mouse over link */
+a:hover {
+    color: #DB4D4D;
+}
+
+/* selected link */
+a:active {
+    color: #ff0000;
+}
+
+/* determines the properties of the header box */
+#header {
+	position:relative;
+	
+	/* these two remove the white space in the top and left corners of the screen.  
+		Changing the padding on the body didn't seem to fix this for some reason. */
+	left:-8px;
+	top:-8px;
+	
+    background-color:black;
+    color:#B20000;
+    text-align:center;
+    padding:5px;
+	
+	/* sets the width to be the entire page width (plus a little because it wasn't reaching the edge of the screen) */
+	width:105%;
+	
+	height:60px;
+	float:top;
+	margin:0px;
+	
+	/* sets which thing is drawn over others.  Higher numbers are drawn over lower numbers. */
+	z-index: 5;
+}
+
+/* determines the properties of the navigation bar on the left side of the screen */
+#bar {
+	position:fixed;
+	left:0px;
+	top:0px;
+    line-height:30px;
+    background-color:#222222;
+	color:#B20000;
+	
+	/* sets the width to be the entire page height */
+    height:100%;
+	
+    width:200px;
+    float:left;
+    padding:5px;
+	margin:0px;
+	
+	/* Creates a border for the side bar.  It takes the same color as text. */
+	border-style: ridge;
+	border-width: 3px;
+	
+	/* sets which thing is drawn over others.  Higher numbers are drawn over lower numbers. */
+	z-index: 10;
+}
+
+/* determines the properties of the centre body*/
+#center {
+	background-color:#AAAAAA;
+	position: relative;
+	top:-8px;
+    left: 202px;
+	
+	/* supposed to set the width and height to the remaining size of the screen */
+    width:86%;
+	height:100%;
+    float:left;
+    padding:10px;
+	margin: 0px;
+	
+	/* sets which thing is drawn over others.  Higher numbers are drawn over lower numbers. */
+	z-index: 0;
+}
+</style> 
