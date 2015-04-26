@@ -1,0 +1,14 @@
+{
+  "name": "TankTest",
+  "version": "1.0.0",
+  "description": "A test website that has a few tanks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carlton Johnson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
