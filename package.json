@@ -2,13 +2,23 @@
   "name": "TankTest",
   "version": "1.0.0",
   "description": "A test website that has a few tanks",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x",
+    "fs": "0.0.2",
+    "http": "0.0.0",
+    "path": "^0.11.14"
+  },
+  "engines": {
+    "node": "0.12.2"
   },
   "author": "Carlton Johnson",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.12.3"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WorldOfHurt/TestWebsite.git"
+  },
+  "license": "ISC"
 }
