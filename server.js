@@ -73,5 +73,5 @@ function requestHandler(req, res) {
 	getFile((localFolder + fileName),res,page404,extensions[ext]);
 };
  
-//create the server and listen on port 8000
-http.createServer(requestHandler).listen(8000);
+//create the server and listen on port 5000
+http.createServer(requestHandler).listen(5000);
