@@ -5,6 +5,7 @@ var
 http = require('http'),
 path = require('path'),
 fs = require('fs'),
+port = process.env.PORT || 3000,
  
 //supported file types/extensions
 extensions = {
@@ -73,5 +74,5 @@ function requestHandler(req, res) {
 	getFile((localFolder + fileName),res,page404,extensions[ext]);
 };
  
-//create the server and listen on port 5000
-http.createServer(requestHandler).listen(5000);
+//create the server and listen on the port specified or port 3000
+http.createServer(requestHandler).listen(port);
